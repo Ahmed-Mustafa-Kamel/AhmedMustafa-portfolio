@@ -72,9 +72,19 @@ const Contact = () => {
           </div>
         </div>
         {/* CONTACT form */}
-        <form action="" method="POST" className="xl:pl-10 2xl:pl-20">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          className="xl:pl-10 2xl:pl-20"
+        >
           {/* form container */}
           <div className="md:grid md:items-center md:gap-2">
+            <input
+              type="hidden"
+              name="access_key"
+              value="c254446e-9412-4d58-b0ca-2bc4a7bfb79f"
+            />
+
             {/* name */}
             <div className="mb-4">
               <label htmlFor="name" className="label reveal-up">
