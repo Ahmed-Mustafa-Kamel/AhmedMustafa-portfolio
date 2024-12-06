@@ -4,7 +4,7 @@
  */
 // import { TypeAnimation } from "react-type-animation";
 
-import { ButtonPrimary, ButtonOutLine } from "./button";
+import { ButtonPrimary, ButtonOutLine } from "./Button";
 
 const Hero = () => {
   return (
