@@ -3,7 +3,7 @@
  * @license Apache-2.0
  */
 
-import { ButtonPrimary } from "./button";
+import { ButtonPrimary } from "../components/Button.jsx";
 
 const sitemap = [
   {
