@@ -124,7 +124,7 @@ const Contact = () => {
           {/* submit button */}
           <button
             type="submit"
-            className="btn btn-primary [&]:max-w-full w-full justify-center reveal-up"
+            className="btn btn-primary [&]:max-w-full w-full justify-center"
           >
             Submit
           </button>
