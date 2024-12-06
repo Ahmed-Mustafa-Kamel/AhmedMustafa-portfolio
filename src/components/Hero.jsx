@@ -67,7 +67,7 @@ const Hero = () => {
               src="/hero.png"
               width={400}
               height={800}
-              className="w-full"
+              className="w-full drop-shadow-[0_-1px_4px_#36befa]"
               alt="Ahmed Mustafa"
             />
           </figure>
