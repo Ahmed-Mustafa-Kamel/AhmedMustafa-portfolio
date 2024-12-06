@@ -119,7 +119,7 @@ const Contact = () => {
 
             {/* message */}
             <div className="mb-4">
-              <label htmlFor="message" className="label reveal-up">
+              <label htmlFor="message" className="label ">
                 Message
               </label>
               <textarea
