@@ -50,7 +50,7 @@ const Hero = () => {
           <h2 className="headline-2 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8">
             Building Scalable Modern Websites
           </h2>
-          <div className="flex items-center gap-3">
+          <div className="flex justify-center md:justify-start items-center gap-3">
             <ButtonPrimary label={"Download CV"} icon="download" href={CV} />
             <ButtonOutLine
               href={"#about"}
@@ -62,12 +62,12 @@ const Hero = () => {
         {/* end text */}
 
         {/* image  */}
-        <div className="hidden lg:block">
+        <div className="justify-self-center mt-10">
           <figure className="w-full max-w-[400px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
             <img
               src="/hero.png"
               width={350}
-              className=" drop-shadow-[0_-1px_4px_#36befa] justify-self-center"
+              className="drop-shadow-[0_-1px_4px_#36befa] justify-self-center"
               alt="Ahmed Mustafa"
             />
           </figure>
