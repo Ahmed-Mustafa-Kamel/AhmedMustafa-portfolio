@@ -127,7 +127,7 @@ const Contact = () => {
                 id="message"
                 required
                 placeholder="Hi!.."
-                className="text-field min-h-32 max-h-80 reveal-up"
+                className="text-field min-h-32 max-h-80"
               ></textarea>
             </div>
           </div>
