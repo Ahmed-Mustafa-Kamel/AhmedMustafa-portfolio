@@ -3,7 +3,7 @@
  * @license Apache-2.0
  */
 // import { TypeAnimation } from "react-type-animation";
-import CV from "../../public/Ahmed Mustafa Kamel.pdf";
+import CV from "../../public/Ahmed Mustafa Kamel1.pdf";
 
 import { ButtonPrimary, ButtonOutLine } from "./Button";
 
