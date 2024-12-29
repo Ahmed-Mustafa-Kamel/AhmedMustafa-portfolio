@@ -61,7 +61,7 @@ const Contact = () => {
             {/* button to open whatsapp chat with me */}
             <ButtonPrimary label={" WhatsApp"} icon="forum" 
             href="
-            https://wa.me/+201552238108" target="_blank" />
+            https://wa.me/+201552238108" target="_blank" classes="mt-4" />
 
           </p>
           {/* mapping social links */}
