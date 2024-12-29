@@ -3,7 +3,7 @@
  * @license Apache-2.0
  */
 // import { TypeAnimation } from "react-type-animation";
-import CV from "../../public/Ahmed Mustafa Kamel1.pdf";
+import CV from "../assets/Ahmed Mustafa Kamel1.pdf";
 
 import { ButtonPrimary, ButtonOutLine } from "./Button";
 
@@ -62,12 +62,12 @@ const Hero = () => {
         {/* end text */}
 
         {/* image  */}
-        <div className="hidden lg:block">
-          <figure className="w-full max-w-[400px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
+        <div className="">
+          <figure className="w-full max-w-[400px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] mt-10 overflow-hidden">
             <img
               src="/hero.png"
-              width={400}
-              className="drop-shadow-[0_-1px_4px_#36befa] justify-self-center"
+              width={320}
+              className="drop-shadow-[0_-1px_2px_#36befa] justify-self-center"
               alt="Ahmed Mustafa"
             />
           </figure>
