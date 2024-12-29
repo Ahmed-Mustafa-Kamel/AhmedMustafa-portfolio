@@ -3,6 +3,8 @@
  * @license Apache-2.0
  */
 
+import { ButtonPrimary } from "./Button";
+
 const socialLinks = [
   {
     href: "https://github.com/Ahmed-Mustafa-Kamel",
@@ -55,7 +57,12 @@ const Contact = () => {
           {/* p */}
           <p className=" text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
             Reach out today to discuss your project needs and start
-            collaborating on something amazing!
+            collaborating on something amazing!<br/>
+            {/* button to open whatsapp chat with me */}
+            <ButtonPrimary label={" WhatsApp"} icon="forum" 
+            href="
+            https://wa.me/01552238108" target="_blank" />
+
           </p>
           {/* mapping social links */}
           <div className="flex items-center gap-2 mt-auto reveal-up">
@@ -87,7 +94,7 @@ const Contact = () => {
 
             {/* name */}
             <div className="mb-4">
-              <label htmlFor="name" className="label reveal-up">
+              <label htmlFor="name" className="label">
                 Name
               </label>
               <input
@@ -97,13 +104,13 @@ const Contact = () => {
                 autoComplete="name"
                 required
                 placeholder="Your Name"
-                className="text-field reveal-up"
+                className="text-field"
               />
             </div>
 
             {/* email  */}
             <div className="mb-4">
-              <label htmlFor="email" className="label reveal-up">
+              <label htmlFor="email" className="label">
                 Email
               </label>
               <input
@@ -113,7 +120,7 @@ const Contact = () => {
                 autoComplete="email"
                 required
                 placeholder="...@example.com"
-                className="text-field reveal-up"
+                className="text-field"
               />
             </div>
 

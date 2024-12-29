@@ -2,7 +2,7 @@
  * @copyright 2024 AhmedMustafa
  * @license Apache-2.0
  */
-// import { TypeAnimation } from "react-type-animation";
+import { TypeAnimation } from "react-type-animation";
 import CV from "../assets/Ahmed Mustafa Kamel1.pdf";
 
 import { ButtonPrimary, ButtonOutLine } from "./Button";
@@ -35,19 +35,17 @@ const Hero = () => {
             </div>
             {/* end available */}
           </div>
-          {/* <h2 className="headline-1">
-            I&apos;m <span className=" text-sky-300">Ahmed Mustafa</span>
-          </h2> */}
-          {/* <h2 className="headline-1">
-            I&apos;m{" "}
+
+          <h2 className="headline-2 my-8">
+          {"Building"}
             <TypeAnimation
-              sequence={["FrontEnd", 1000, "BackEnd", 1000, "FullStack", 1000]}
-              speed={50}
+              sequence={[" Scalable", 1000 ," Modern" ,1000]}
+              speed={10}
               repeat={Infinity}
               className="text-sky-300 "
-            />
-          </h2> */}
-          <h2 className="headline-2 my-8">Building Scalable Modern Websites</h2>
+            /><br/>
+             {"Websites"}
+          </h2>
           <div className="flex items-center gap-3">
             <ButtonPrimary label={"Download CV"} icon="download" href={CV} />
             <ButtonOutLine
