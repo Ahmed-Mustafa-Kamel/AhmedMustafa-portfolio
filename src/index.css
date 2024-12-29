@@ -23,7 +23,7 @@ body {
 }
 
 .headline-2 {
-  @apply text-5xl leading-tight font-semibold lg:text-[45px] lg:leading-[1];
+  @apply text-4xl leading-tight font-semibold lg:text-[45px] lg:leading-[1];
 }
 
 .headline-3 {

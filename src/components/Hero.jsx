@@ -47,9 +47,7 @@ const Hero = () => {
               className="text-sky-300 "
             />
           </h2> */}
-          <h2 className="headline-2 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8">
-            Building Scalable Modern Websites
-          </h2>
+          <h2 className="headline-2 my-8">Building Scalable Modern Websites</h2>
           <div className="flex items-center gap-3">
             <ButtonPrimary label={"Download CV"} icon="download" href={CV} />
             <ButtonOutLine
