@@ -9,19 +9,19 @@ const Works = [
   {
     imgSrc: "/projects/DevSquad-portfolio.png",
     title: "Dev Squad Portfolio",
-    tags: ["FrontEnd", "Web Design"],
+    tags: ["FrontEnd", "React.js","Web Design"],
     projectLink: "https://dev-squad-portfolio.vercel.app/",
   },
   {
     imgSrc: "/projects/Restaura.png",
     title: "Resturant app",
-    tags: ["FrontEnd"],
+    tags: ["FrontEnd", "React.js"],
     projectLink: "https://restaura-sage.vercel.app/",
   },
   {
     imgSrc: "/projects/coffee-coders.png",
     title: "Coffee selling app",
-    tags: ["FrontEnd", "Web Design"],
+    tags: ["FrontEnd","React.js", "Web Design"],
     projectLink: "https://coders-coffee-wine.vercel.app/",
   },
   {
@@ -41,14 +41,20 @@ const Works = [
   {
     imgSrc: "/projects/react-portfolio-model.png",
     title: "Responsive portfolio model ",
-    tags: ["FrontEnd"],
+    tags: ["FrontEnd" , "React.js"],
     projectLink: "https://react-portfolio-model.netlify.app/",
   },
   {
     imgSrc: "/projects/BookStore.png",
     title: "BookStore app",
-    tags: ["BackEnd", "API"],
+    tags: ["BackEnd","Express.js", "API"],
     projectLink: "https://github.com/Ahmed-Mustafa-Kamel/Book-Store-MERN-Stack",
+  },
+  {
+    imgSrc: "/projects/prayer-times.png",
+    title: "Prayer Times app",
+    tags: ["FrontEnd", "React.js", "API"],
+    projectLink: "https://prayer-times-steel.vercel.app/",
   },
   // {
   //   imgSrc: "/projects/CRUD.png",
