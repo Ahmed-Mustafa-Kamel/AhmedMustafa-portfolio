@@ -50,12 +50,12 @@ const Works = [
     tags: ["BackEnd", "API"],
     projectLink: "https://github.com/Ahmed-Mustafa-Kamel/Book-Store-MERN-Stack",
   },
-  {
-    imgSrc: "/projects/CRUD.png",
-    title: "Prodect Management System",
-    tags: ["FrontEnd"],
-    projectLink: "https://ahmed-mustafa-kamel.github.io/CRUDS/",
-  },
+  // {
+  //   imgSrc: "/projects/CRUD.png",
+  //   title: "Prodect Management System",
+  //   tags: ["FrontEnd"],
+  //   projectLink: "https://ahmed-mustafa-kamel.github.io/CRUDS/",
+  // },
 ];
 
 const Work = () => {
