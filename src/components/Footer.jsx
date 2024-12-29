@@ -108,7 +108,7 @@ const Footer = () => {
           </div>
         </div>
         {/* logo img & copyrights */}
-        <div className=" flex items-center justify-between pt-10 mb-8">
+        <div className=" flex items-center justify-between pt-10">
           <a href="">
             <img src="/AMlogo2.png" width={40} height={40} alt="logo" />
           </a>

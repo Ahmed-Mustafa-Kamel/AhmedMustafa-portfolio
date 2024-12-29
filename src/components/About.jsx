@@ -9,7 +9,7 @@ const aboutItems = [
   },
   {
     label: "Years of experience",
-    number: 3,
+    number: 2,
   },
 ];
 const About = () => {
