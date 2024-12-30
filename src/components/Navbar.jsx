@@ -27,9 +27,40 @@ const Navbar = ({ navOpen }) => {
     activBox.current.style.height = event.target.offsetHeight + "px";
   };
 
-  useEffect(initActiveBox, []);
+  const updateActiveSection = () => {
+    const sections = ["home", "about", "skills", "work", "contact"];
+    const navLinks = document.querySelectorAll(".nav-link");
 
-  window.addEventListener("resize", initActiveBox);
+    sections.forEach((sectionId, index) => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        // Check if section is in viewport
+        if (rect.top <= 150 && rect.bottom >= 150) {
+          lastActiveLink.current?.classList.remove("active");
+          navLinks[index].classList.add("active");
+          lastActiveLink.current = navLinks[index];
+          
+          // Update active box position
+          activBox.current.style.top = navLinks[index].offsetTop + "px";
+          activBox.current.style.left = navLinks[index].offsetLeft + "px";
+          activBox.current.style.width = navLinks[index].offsetWidth + "px";
+          activBox.current.style.height = navLinks[index].offsetHeight + "px";
+        }
+      }
+    });
+  };
+
+  useEffect(() => {
+    initActiveBox();
+    window.addEventListener("scroll", updateActiveSection);
+    window.addEventListener("resize", initActiveBox);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", initActiveBox);
+    };
+  }, []);
 
   const navItems = [
     {
@@ -53,11 +84,6 @@ const Navbar = ({ navOpen }) => {
       link: "#work",
       className: "nav-link",
     },
-    // {
-    //   label: "Reviews",
-    //   link: "#reviews",
-    //   className: "nav-link",
-    // },
     {
       label: "Contact",
       link: "#contact",
@@ -78,13 +104,11 @@ const Navbar = ({ navOpen }) => {
           {label}
         </a>
       ))}
-
       <div className="active-box" ref={activBox}></div>
     </nav>
   );
 };
 
-// Corrected PropTypes definition
 Navbar.propTypes = {
   navOpen: PropTypes.bool.isRequired,
 };

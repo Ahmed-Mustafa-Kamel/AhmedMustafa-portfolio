@@ -36,23 +36,33 @@ const Hero = () => {
             {/* end available */}
           </div>
 
-          <h2 className="headline-2 my-8">
-          {"Building"}
+          <h1 className="headline-2 my-8">
+          {"Building"}<br/>
             <TypeAnimation
-              sequence={[" Scalable", 1000 ," Modern" ,1000]}
-              speed={10}
+              sequence={["Scalable", 1000 ,"Modern" ,1000]}
+              speed={30}
               repeat={Infinity}
               className="text-sky-300 "
             /><br/>
+            
              {"Websites"}
-          </h2>
+          </h1>
           <div className="flex items-center gap-3">
             <ButtonPrimary label={"Download CV"} icon="download" href={CV} />
-            <ButtonOutLine
-              href={"#about"}
-              label={"Scroll down"}
-              icon="arrow_downward"
-            />
+            <div className="hidden md:block">
+  <ButtonOutLine
+    href={"#about"}
+    label={"Scroll down"}
+    icon="arrow_downward"
+  />
+</div>
+<div className="block md:hidden">
+  <ButtonOutLine
+    href={"#contact"}
+    label={"Contact Me"}
+    icon="mail"
+  />
+</div>
           </div>
         </div>
         {/* end text */}

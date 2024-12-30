@@ -22,11 +22,11 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  text-emphasis-color: transparent;
 }
 
 .headline-2 {
-  @apply text-4xl leading-tight font-semibold lg:text-[45px] lg:leading-[1];
+  @apply text-4xl leading-tight font-semibold text-[60px];
 }
 
 .headline-3 {
