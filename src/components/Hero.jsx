@@ -43,7 +43,8 @@ const Hero = () => {
               speed={30}
               repeat={Infinity}
               className="text-sky-300 "
-            /><br/>
+            />
+            <br/>
             
              {"Websites"}
           </h1>
