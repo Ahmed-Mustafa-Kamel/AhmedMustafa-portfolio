@@ -25,7 +25,7 @@ const socialLinks = [
     alt: "GitHub",
   },
   {
-    href: "https://www.linkedin.com/in/ahmed-mustafa-96239b206/",
+    href: "https://www.linkedin.com/in/ahmed-mustafa-kamel/",
     icon: (
       <svg
         width="24"
