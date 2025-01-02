@@ -9,7 +9,7 @@ import { ButtonPrimary, ButtonOutLine } from "./Button";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-28 lg:pt-36">
+    <section id="home" className="pt-28 md:pt-36">
       <div className="container md:grid md:grid-cols-2 items-center md:gap-10">
         {/* text */}
         <div>
