@@ -45,7 +45,6 @@ const Hero = () => {
               className="text-sky-300 "
             />
             <br/>
-            
              {"Websites"}
           </h1>
           <div className="flex items-center gap-3">
@@ -70,7 +69,7 @@ const Hero = () => {
 
         {/* image  */}
         <div className="">
-          <figure className="w-full max-w-[400px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] mt-10 overflow-hidden">
+          <figure className="w-full max-w-[400px] mx-auto md:ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] mt-10 overflow-hidden">
             <img
               src="/hero.png"
               width={320}
