@@ -3,7 +3,7 @@
  * @license Apache-2.0
  */
 import { TypeAnimation } from "react-type-animation";
-import CV from "../assets/Ahmed Mustafa Kamel1.pdf";
+import CV from "../assets/Ahmed Mustafa Kamel.pdf";
 
 import { ButtonPrimary, ButtonOutLine } from "./Button";
 
@@ -48,7 +48,7 @@ const Hero = () => {
              {"Websites"}
           </h1>
           <div className="flex items-center gap-3">
-            <ButtonPrimary label={"Download CV"} icon="download" href={CV} />
+            <ButtonPrimary label={"Download Resume"} icon="download" href={CV} />
             <div className="hidden md:block">
   <ButtonOutLine
     href={"#about"}
