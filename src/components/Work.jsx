@@ -9,39 +9,39 @@ const Works = [
   {
     imgSrc: "/projects/DevSquad-portfolio.png",
     title: "Dev Squad Portfolio",
-    tags: ["FrontEnd", "React.js",],
+    tags: ["FrontEnd", "React.js", "Tailwind", "Framer Motion"],
     projectLink: "https://dev-squad-portfolio.vercel.app/",
   },
   {
     imgSrc: "/projects/Restaura.png",
     title: "Resturant Website",
-    tags: ["FrontEnd", "React.js"],
+    tags: ["FrontEnd", "React.js", "Tailwind", "Framer Motion"],
     projectLink: "https://restaura-sage.vercel.app/",
   },
   {
     imgSrc: "/projects/coffee-coders.png",
     title: "Coffee selling Website",
-    tags: ["FrontEnd","React.js",],
+    tags: ["FrontEnd","React.js", "Tailwind", "Framer Motion"],
     projectLink: "https://coders-coffee-wine.vercel.app/",
   },
   {
     imgSrc: "/projects/photo-gallery.png",
     title: "Photo Gallery Website",
-    tags: ["BackEnd", "API"],
+    tags: ["BackEnd","Express.js", "API"],
     projectLink:
       "https://github.com/Ahmed-Mustafa-Kamel/photo-gallery-MERN-Stack",
   },
   {
     imgSrc: "/projects/space-website.png",
     title: "Responsive Space Website ",
-    tags: ["FrontEnd", "Web Design"],
+    tags: ["FrontEnd","HTML", "CSS" , "JavaScript", "Web Design"],
     projectLink:
       "https://ahmed-mustafa-kamel.github.io/responsive-space-website/",
   },
   {
     imgSrc: "/projects/react-portfolio-model.png",
     title: "Responsive portfolio model ",
-    tags: ["FrontEnd" , "React.js","Web Design"],
+    tags: ["FrontEnd" , "React.js", "Framer Motion"],
     projectLink: "https://react-portfolio-model.netlify.app/",
   },
   {
