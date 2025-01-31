@@ -52,6 +52,11 @@ const skillItem = [
     desc: "Framework",
   },
   {
+    imgSrc: "/nextjs.svg",
+    label: "Next.js",
+    desc: "React Framework",
+  },
+  {
     imgSrc: "/git.svg",
     label: "GIT",
     desc: "source code management",
