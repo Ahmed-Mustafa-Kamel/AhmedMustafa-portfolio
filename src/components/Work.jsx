@@ -66,11 +66,7 @@ const Works = [
 
 const Work = () => {
   return (
-    <section 
-      id="work" 
-      className="section"
-      aria-label="Portfolio Projects"
-    >
+    <section id="work" className="section">
       <div className="container">
         <h2 className="headline-3 mb-4 fade-in">My Portfolio Highlights</h2>
         {/* mapping projects */}
@@ -82,8 +78,7 @@ const Work = () => {
               title={title}
               tags={tags}
               projectLink={projectLink}
-              classes={`fade-in${index < 1 ? ' loading="eager"' : ''}`}
-              priority={index < 1}
+              classes="fade-in"
             />
           ))}
         </div>
