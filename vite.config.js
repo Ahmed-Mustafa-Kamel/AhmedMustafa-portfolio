@@ -14,13 +14,13 @@ export default defineConfig({
       },
     },
     chunkSizeWarningLimit: 1000,
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true
-      }
-    }
+    minify: 'esbuild',
+    target: 'esnext',
+    cssMinify: true,
+    cssCodeSplit: true,
+    assetsInlineLimit: 4096,
+    sourcemap: false,
+    reportCompressedSize: false
   },
   server: {
     open: true,
