@@ -82,7 +82,8 @@ const Work = () => {
               title={title}
               tags={tags}
               projectLink={projectLink}
-              classes={`fade-in${index < 2 ? ' loading="eager"' : ''}`}
+              classes={`fade-in${index < 1 ? ' loading="eager"' : ''}`}
+              priority={index < 1}
             />
           ))}
         </div>

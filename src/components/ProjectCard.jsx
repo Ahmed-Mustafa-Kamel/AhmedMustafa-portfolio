@@ -5,7 +5,7 @@
 
 import PropTypes from "prop-types";
 
-const ProjectCard = ({ imgSrc, title, projectLink, tags, classes }) => {
+const ProjectCard = ({ imgSrc, title, projectLink, tags, classes, priority }) => {
   return (
     <div
       className={
@@ -19,10 +19,12 @@ const ProjectCard = ({ imgSrc, title, projectLink, tags, classes }) => {
         <img 
           src={imgSrc} 
           alt={`${title} project screenshot`}
-          loading="lazy"
+          loading={priority ? "eager" : "lazy"}
           width={400}
           height={225}
           className="img-cover" 
+          decoding={priority ? "sync" : "async"}
+          fetchPriority={priority ? "high" : "auto"}
         />
       </figure>
       {/* project details */}
@@ -68,6 +70,7 @@ ProjectCard.propTypes = {
   tags: PropTypes.array.isRequired,
   projectLink: PropTypes.string,
   classes: PropTypes.string,
+  priority: PropTypes.bool,
 };
 
 export default ProjectCard;

@@ -83,6 +83,8 @@ const Hero = () => {
               className="drop-shadow-[0_-1px_2px_#36befa] mx-auto"
               alt="Ahmed Mustafa - Web Developer"
               loading="eager"
+              decoding="sync"
+              fetchPriority="high"
             />
           </figure>
         </div>
