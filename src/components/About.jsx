@@ -43,7 +43,7 @@ const About = () => {
             <div>
               <div className="md:mb-2">
                 <span className="text-2xl font-semibold md:text-4xl">
-                  {stats.projects}
+                  15
                 </span>
                 <span className="text-sky-400 font-bold text-2xl md:text-4xl">
                   +
@@ -54,7 +54,7 @@ const About = () => {
             <div>
               <div className="md:mb-2">
                 <span className="text-2xl font-semibold md:text-4xl">
-                  {stats.experience}
+                  2
                 </span>
                 <span className="text-sky-400 font-bold text-2xl md:text-4xl">
                   +

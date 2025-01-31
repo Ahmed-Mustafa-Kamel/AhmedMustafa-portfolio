@@ -9,6 +9,7 @@ const Dashboard = () => {
     experience: 2
   });
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -62,13 +63,26 @@ const Dashboard = () => {
         <div className="bg-zinc-800 p-8 rounded-lg max-w-md w-full">
           <h2 className="text-2xl font-bold mb-6">Dashboard Login</h2>
           <form onSubmit={handleLogin} className="flex flex-col gap-4">
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter password"
-              className="bg-zinc-700 p-3 rounded"
-            />
+            <div className="relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter password"
+                className="bg-zinc-700 p-3 rounded w-full pr-12"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-200"
+              >
+                {showPassword ? (
+                  <span className="material-symbols-rounded text-xl">visibility_off</span>
+                ) : (
+                  <span className="material-symbols-rounded text-xl">visibility</span>
+                )}
+              </button>
+            </div>
             <div className="flex gap-2">
               <button 
                 type="submit"
