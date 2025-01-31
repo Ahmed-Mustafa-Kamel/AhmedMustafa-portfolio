@@ -20,20 +20,25 @@ function App() {
   useEffect(() => {
     const elements = gsap.utils.toArray(".reveal-up");
     elements.forEach((element) => {
-      gsap.fromTo(
-        element,
-        { y: 100, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: element,
-            scrub: true,
-          },
-        }
-      );
+      // Set initial styles to prevent layout shifts
+      gsap.set(element, {
+        clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+        transform: "translateY(100px)",
+        opacity: 1, // Keep opacity at 1 to prevent layout shifts
+      });
+
+      gsap.to(element, {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        transform: "translateY(0)",
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top bottom-=100",
+          end: "top center",
+          scrub: 1,
+        },
+      });
     });
 
     // Cleanup function to kill ScrollTriggers on unmount
