@@ -51,11 +51,11 @@ const Contact = () => {
         {/* left section */}
         <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
           {/* headline */}
-          <h2 className="headline-3 lg:max-w-[12ch] reveal-up">
+          <h2 className="headline-3 lg:max-w-[12ch] fade-in">
             Contact me for collaboration
           </h2>
           {/* p */}
-          <p className=" text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
+          <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] fade-in">
             Reach out today to discuss your project needs and start
             collaborating on something amazing!<br/>
             {/* button to open whatsapp chat with me */}
@@ -65,7 +65,7 @@ const Contact = () => {
 
           </p>
           {/* mapping social links */}
-          <div className="flex items-center gap-2 mt-auto reveal-up">
+          <div className="flex items-center gap-2 mt-auto fade-in">
             {socialLinks.map(({ href, icon }, index) => (
               <a
                 key={index}

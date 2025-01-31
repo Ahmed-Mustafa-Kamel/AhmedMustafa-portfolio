@@ -62,9 +62,9 @@ const Skill = () => {
   return (
     <section id="skills" className="section">
       <div className="container">
-        <h2 className="headline-3 reveal-up">Essential Tools I Use</h2>
+        <h2 className="headline-3 fade-in">Essential Tools I Use</h2>
 
-        <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] reveal-up">
+        <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] fade-in">
           Discover the powerful tools and technologies I use to create
           exceptional, high-performing websites & applications.
         </p>
@@ -76,7 +76,7 @@ const Skill = () => {
               imgSrc={imgSrc}
               label={label}
               desc={desc}
-              classes={"reveal-up"}
+              classes="fade-in"
             />
           ))}
         </div>

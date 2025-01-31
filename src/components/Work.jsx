@@ -68,7 +68,7 @@ const Work = () => {
   return (
     <section id="work" className="section">
       <div className="container">
-        <h2 className="headline-3 mb-4 reveal-up">My Portfolio Highlights</h2>
+        <h2 className="headline-3 mb-4 fade-in">My Portfolio Highlights</h2>
         {/* mapping projects */}
         <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
           {Works.map(({ imgSrc, title, tags, projectLink }, index) => (
@@ -78,7 +78,7 @@ const Work = () => {
               title={title}
               tags={tags}
               projectLink={projectLink}
-              classes="reveal-up"
+              classes="fade-in"
             />
           ))}
         </div>
