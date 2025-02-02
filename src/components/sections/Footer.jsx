@@ -3,53 +3,8 @@
  * @license Apache-2.0
  */
 
-import { ButtonPrimary } from "../components/Button.jsx";
-
-const sitemap = [
-  {
-    label: "Home",
-    href: "#home",
-  },
-  {
-    label: "About",
-    href: "#about",
-  },
-  {
-    label: "Work",
-    href: "#work",
-  },
-  //   {
-  //     label: "Reviews",
-  //     href: "#reviews",
-  //   },
-  {
-    label: "Contact me",
-    href: "#contact",
-  },
-];
-
-const socials = [
-  {
-    label: "GitHub",
-    href: "https://github.com/Ahmed-Mustafa-Kamel",
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/ahmed-mustafa-96239b206/",
-  },
-  //   {
-  //     label: "Twitter X",
-  //     href: "https://x.com/codewithsadee_",
-  //   },
-  //   {
-  //     label: "Instagram",
-  //     href: "https://www.instagram.com/codewithsadee",
-  //   },
-  //   {
-  //     label: "CodePen",
-  //     href: "https://codepen.io/codewithsadee",
-  //   },
-];
+import { ButtonPrimary } from '@components/common/Button';
+import { SOCIAL_LINKS, NAV_ITEMS } from '@constants/data';
 
 const Footer = () => {
   return (
@@ -75,7 +30,7 @@ const Footer = () => {
             <div>
               <p className="mb-2">Sitemap</p>
               <ul>
-                {sitemap.map(({ label, href }, index) => (
+                {NAV_ITEMS.map(({ label, href }, index) => (
                   <li key={index}>
                     <a
                       href={href}
@@ -90,13 +45,14 @@ const Footer = () => {
 
             {/* mapping social links */}
             <div>
-              <p className="mb-2"> social links</p>
+              <p className="mb-2">Social Links</p>
               <ul>
-                {socials.map(({ label, href }, index) => (
+                {SOCIAL_LINKS.map(({ label, href }, index) => (
                   <li key={index}>
                     <a
                       href={href}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200"
                     >
                       {label}
@@ -109,8 +65,8 @@ const Footer = () => {
         </div>
         {/* logo img & copyrights */}
         <div className=" flex items-center justify-between pt-10">
-          <a href="">
-            <img src="/AMlogo2.png" width={40} height={40} alt="logo" />
+          <a href="/">
+            <img src="/AMlogo2.png" width={40} height={40} alt="Ahmed Mustafa Logo" />
           </a>
           {/* copy rights */}
           <p className=" text-zinc-500 text-sm">

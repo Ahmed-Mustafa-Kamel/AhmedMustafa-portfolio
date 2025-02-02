@@ -3,9 +3,9 @@
  * @license Apache-2.0
  */
 import { TypeAnimation } from "react-type-animation";
-import CV from "../assets/Ahmed Mustafa Kamel.pdf";
+import CV from "../../assets/Ahmed Mustafa Kamel.pdf";
 
-import { ButtonPrimary, ButtonOutLine } from "./Button";
+import { ButtonPrimary, ButtonOutLine } from '@components/common/Button';
 
 const Hero = () => {
   return (
