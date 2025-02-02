@@ -5,6 +5,7 @@
 
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
+import { NAV_ITEMS } from '@constants/data';
 
 const Navbar = ({ navOpen }) => {
   const lastActiveLink = useRef();
@@ -27,21 +28,34 @@ const Navbar = ({ navOpen }) => {
     activBox.current.style.height = event.target.offsetHeight + "px";
   };
 
+  const handleClick = (e, href) => {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      const headerOffset = 100;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   const updateActiveSection = () => {
-    const sections = ["home", "about", "skills", "work", "contact"];
+    const sections = ["home", "about", "skills", "work"];
     const navLinks = document.querySelectorAll(".nav-link");
 
     sections.forEach((sectionId, index) => {
       const section = document.getElementById(sectionId);
       if (section) {
         const rect = section.getBoundingClientRect();
-        // Check if section is in viewport
         if (rect.top <= 150 && rect.bottom >= 150) {
           lastActiveLink.current?.classList.remove("active");
           navLinks[index].classList.add("active");
           lastActiveLink.current = navLinks[index];
           
-          // Update active box position
           activBox.current.style.top = navLinks[index].offsetTop + "px";
           activBox.current.style.left = navLinks[index].offsetLeft + "px";
           activBox.current.style.width = navLinks[index].offsetWidth + "px";
@@ -62,44 +76,18 @@ const Navbar = ({ navOpen }) => {
     };
   }, []);
 
-  const navItems = [
-    {
-      label: "Home",
-      link: "#home",
-      className: "nav-link active",
-      ref: lastActiveLink,
-    },
-    {
-      label: "About",
-      link: "#about",
-      className: "nav-link",
-    },
-    {
-      label: "Skills",
-      link: "#skills",
-      className: "nav-link",
-    },
-    {
-      label: "Work",
-      link: "#work",
-      className: "nav-link",
-    },
-    {
-      label: "Contact",
-      link: "#contact",
-      className: "nav-link md:hidden",
-    },
-  ];
-
   return (
     <nav className={"navbar" + (navOpen ? " active" : " ")}>
-      {navItems.map(({ label, link, className, ref }, index) => (
+      {NAV_ITEMS.map(({ label, href }, index) => (
         <a
           key={index}
-          href={link}
-          ref={ref}
-          className={className}
-          onClick={activeCurrentLink}
+          href={href}
+          ref={index === 0 ? lastActiveLink : null}
+          className={`nav-link${index === 0 ? ' active' : ''}`}
+          onClick={(e) => {
+            activeCurrentLink(e);
+            handleClick(e, href);
+          }}
         >
           {label}
         </a>
