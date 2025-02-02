@@ -3,7 +3,7 @@
  * @license Apache-2.0
  */
 
-import { ButtonPrimary } from "./Button";
+import { ButtonPrimary } from "@components/common/Button";
 
 const socialLinks = [
   {
@@ -92,36 +92,38 @@ const Contact = () => {
               value="c254446e-9412-4d58-b0ca-2bc4a7bfb79f"
             />
 
-            {/* name */}
-            <div className="mb-4">
-              <label htmlFor="name" className="label">
-                Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                autoComplete="name"
-                required
-                placeholder="Your Name"
-                className="text-field"
-              />
-            </div>
+            <div className="md:grid md:grid-cols-2 md:gap-4">
+              {/* name */}
+              <div className="mb-4 md:mb-0">
+                <label htmlFor="name" className="label">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  autoComplete="name"
+                  required
+                  placeholder="Your Name"
+                  className="text-field"
+                />
+              </div>
 
-            {/* email  */}
-            <div className="mb-4">
-              <label htmlFor="email" className="label">
-                Email
-              </label>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                autoComplete="email"
-                required
-                placeholder="...@example.com"
-                className="text-field"
-              />
+              {/* email  */}
+              <div className="mb-4 md:mb-0">
+                <label htmlFor="email" className="label">
+                  Email
+                </label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  autoComplete="email"
+                  required
+                  placeholder="...@example.com"
+                  className="text-field"
+                />
+              </div>
             </div>
 
             {/* message */}

@@ -144,3 +144,20 @@ body {
 .text-field::placeholder {
   @apply text-zinc-400;
 }
+
+/* Form styles */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(156, 163, 175, 0.6);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.1) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
