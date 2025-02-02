@@ -50,19 +50,19 @@ const Hero = () => {
           <div className="flex items-center gap-3">
             <ButtonPrimary label={"Download Resume"} icon="download" href={CV} />
             <div className="hidden md:block">
-  <ButtonOutLine
-    href={"#about"}
-    label={"Scroll down"}
-    icon="arrow_downward"
-  />
-</div>
-<div className="block md:hidden">
-  <ButtonOutLine
-    href={"#contact"}
-    label={"Contact Me"}
-    icon="mail"
-  />
-</div>
+              <ButtonOutLine
+                href={"#contact"}
+                label={"Hire Me"}
+                icon="mail"
+              />
+            </div>
+            <div className="block md:hidden">
+              <ButtonOutLine
+                href={"#contact"}
+                label={"Contact Me"}
+                icon="mail"
+              />
+            </div>
           </div>
         </div>
         {/* end text */}

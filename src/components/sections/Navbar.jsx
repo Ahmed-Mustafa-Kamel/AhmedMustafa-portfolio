@@ -34,7 +34,7 @@ const Navbar = ({ navOpen }) => {
     if (target) {
       const headerOffset = 100;
       const elementPosition = target.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
       window.scrollTo({
         top: offsetPosition,
