@@ -39,8 +39,8 @@ const Hero = () => {
           <h1 className="headline-2 my-8">
           {"Building"}<br/>
             <TypeAnimation
-              sequence={["Scalable", 1000 ,"Modern" ,1000]}
-              speed={30}
+              sequence={["Scalable", 1500 ,"Modern" ,1500]}
+              speed={10}
               repeat={Infinity}
               className="text-sky-300 "
             />
