@@ -161,3 +161,28 @@ textarea:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.1) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+/* Add this at the end of the file */
+@keyframes pulseLight {
+  0% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+}
+
+.animate-pulse-light {
+  animation: pulseLight 8s ease-in-out infinite;
+}
+
+.animate-pulse-light-delayed {
+  animation: pulseLight 8s ease-in-out infinite;
+  animation-delay: -4s;
+}
