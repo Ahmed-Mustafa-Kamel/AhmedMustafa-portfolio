@@ -4,6 +4,7 @@
  */
 
 import ProjectCard from "./ProjectCard";
+import AnimatedSection from "../common/AnimatedSection";
 
 const Works = [
   {
@@ -21,33 +22,33 @@ const Works = [
   {
     imgSrc: "/projects/coffee-coders.png",
     title: "Coffee selling Website",
-    tags: ["FrontEnd","React.js", "Tailwind", "Framer Motion"],
+    tags: ["FrontEnd", "React.js", "Tailwind", "Framer Motion"],
     projectLink: "https://coders-coffee-wine.vercel.app/",
   },
   {
     imgSrc: "/projects/photo-gallery.png",
     title: "Photo Gallery Website",
-    tags: ["BackEnd","Express.js", "API"],
+    tags: ["BackEnd", "Express.js", "API"],
     projectLink:
       "https://github.com/Ahmed-Mustafa-Kamel/photo-gallery-MERN-Stack",
   },
   {
     imgSrc: "/projects/space-website.png",
     title: "Responsive Space Website ",
-    tags: ["FrontEnd","HTML", "CSS" , "JavaScript", "Web Design"],
+    tags: ["FrontEnd", "HTML", "CSS", "JavaScript", "Web Design"],
     projectLink:
       "https://ahmed-mustafa-kamel.github.io/responsive-space-website/",
   },
   {
     imgSrc: "/projects/react-portfolio-model.png",
     title: "Responsive portfolio model ",
-    tags: ["FrontEnd" , "React.js", "Framer Motion"],
+    tags: ["FrontEnd", "React.js", "Framer Motion"],
     projectLink: "https://react-portfolio-model.netlify.app/",
   },
   {
     imgSrc: "/projects/BookStore.png",
     title: "BookStore Website",
-    tags: ["BackEnd","Express.js", "API"],
+    tags: ["BackEnd", "Express.js", "API"],
     projectLink: "https://github.com/Ahmed-Mustafa-Kamel/Book-Store-MERN-Stack",
   },
   {
@@ -66,24 +67,26 @@ const Works = [
 
 const Work = () => {
   return (
-    <section id="work" className="section">
-      <div className="container">
-        <h2 className="headline-3 mb-4 fade-in">My Portfolio Highlights</h2>
-        {/* mapping projects */}
-        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
-          {Works.map(({ imgSrc, title, tags, projectLink }, index) => (
-            <ProjectCard
-              key={index}
-              imgSrc={imgSrc}
-              title={title}
-              tags={tags}
-              projectLink={projectLink}
-              classes="fade-in"
-            />
-          ))}
+    <AnimatedSection>
+      <section id="work" className="section">
+        <div className="container">
+          <h2 className="headline-3 mb-4 fade-in">My Portfolio Highlights</h2>
+          {/* mapping projects */}
+          <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
+            {Works.map(({ imgSrc, title, tags, projectLink }, index) => (
+              <ProjectCard
+                key={index}
+                imgSrc={imgSrc}
+                title={title}
+                tags={tags}
+                projectLink={projectLink}
+                classes="fade-in"
+              />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </AnimatedSection>
   );
 };
 

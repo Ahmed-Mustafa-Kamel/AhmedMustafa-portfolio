@@ -1,4 +1,5 @@
 import SkillCard from "../SkillCard";
+import AnimatedSection from "../common/AnimatedSection";
 
 /**
  * @copyright 2024 AhmedMustafa
@@ -65,28 +66,30 @@ const skillItem = [
 
 const Skill = () => {
   return (
-    <section id="skills" className="section">
-      <div className="container">
-        <h2 className="headline-3 fade-in">Essential Tools I Use</h2>
+    <AnimatedSection>
+      <section id="skills" className="section">
+        <div className="container">
+          <h2 className="headline-3 fade-in">Essential Tools I Use</h2>
 
-        <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] fade-in">
-          Discover the powerful tools and technologies I use to create
-          exceptional, high-performing websites & applications.
-        </p>
-        {/* mapping skills */}
-        <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
-          {skillItem.map(({ imgSrc, label, desc }, index) => (
-            <SkillCard
-              key={index}
-              imgSrc={imgSrc}
-              label={label}
-              desc={desc}
-              classes="fade-in"
-            />
-          ))}
+          <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] fade-in">
+            Discover the powerful tools and technologies I use to create
+            exceptional, high-performing websites & applications.
+          </p>
+          {/* mapping skills */}
+          <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
+            {skillItem.map(({ imgSrc, label, desc }, index) => (
+              <SkillCard
+                key={index}
+                imgSrc={imgSrc}
+                label={label}
+                desc={desc}
+                classes="fade-in"
+              />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </AnimatedSection>
   );
 };
 

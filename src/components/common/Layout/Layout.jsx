@@ -1,23 +1,24 @@
-import Header from '@components/sections/Header';
-import Footer from '@components/sections/Footer';
-import Lenis from '@studio-freight/lenis'
-import { useEffect } from 'react';
+import Header from "@components/sections/Header";
+import Footer from "@components/sections/Footer";
+import Lenis from "@studio-freight/lenis";
+import { useEffect } from "react";
+import PropTypes from "prop-types";
 
 const Layout = ({ children }) => {
   useEffect(() => {
-    const lenis = new Lenis()
+    const lenis = new Lenis();
 
     function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
+      lenis.raf(time);
+      requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf)
+    requestAnimationFrame(raf);
 
     return () => {
-      lenis.destroy()
-    }
-  }, [])
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <>
@@ -25,7 +26,7 @@ const Layout = ({ children }) => {
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-sky-400/20 rounded-full blur-[128px] animate-pulse-light" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-sky-400/30 rounded-full blur-[128px] animate-pulse-light-delayed" />
       </div>
-      
+
       <Header />
       <main>{children}</main>
       <Footer />
@@ -33,4 +34,8 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout; 
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default Layout;
