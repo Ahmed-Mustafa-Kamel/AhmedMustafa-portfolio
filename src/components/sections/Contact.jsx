@@ -65,10 +65,8 @@ const Contact = () => {
               <ButtonPrimary
                 label={" WhatsApp"}
                 icon="forum"
-                href="
-              https://wa.me/+201552238108"
                 target="_blank"
-                classes="mt-4"
+                classes="mt-4 opacity-50 cursor-not-allowed"
               />
             </p>
             {/* mapping social links */}
