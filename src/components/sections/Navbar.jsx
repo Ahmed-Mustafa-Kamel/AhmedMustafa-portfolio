@@ -33,13 +33,19 @@ const Navbar = ({ navOpen }) => {
     const target = document.querySelector(href);
     if (target) {
       const headerOffset = 100;
-      const elementPosition = target.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
+      // Use the global lenis instance for smooth scrolling
+      const lenis = window.lenis;
+      if (lenis) {
+        lenis.scrollTo(target, { offset: -headerOffset });
+      } else {
+        // Fallback to native scrolling if lenis is not available
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
     }
   };
 
