@@ -6,11 +6,13 @@ import { TypeAnimation } from "react-type-animation";
 import CV from "../../assets/Ahmed Mustafa Kamel.pdf";
 import AnimatedSection from "../common/AnimatedSection";
 import { ButtonPrimary, ButtonOutLine } from "@components/common/Button";
+import FloatingHomeElements from "../common/FloatingHomeElements";
 
 const Hero = () => {
   return (
     <AnimatedSection>
-      <section id="home" className="pt-28 md:pt-36">
+      <section id="home" className="pt-28 md:pt-36 relative overflow-hidden">
+        <FloatingHomeElements />
         <div className="container md:grid md:grid-cols-2 items-center md:gap-10">
           {/* text */}
           <div>

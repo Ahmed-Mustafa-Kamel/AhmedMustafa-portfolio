@@ -4,6 +4,7 @@
  */
 import { useEffect, useState } from "react";
 import AnimatedSection from "../common/AnimatedSection";
+import FloatingAboutElements from "../common/FloatingAboutElements";
 
 const About = () => {
   const [stats, setStats] = useState({
@@ -31,7 +32,8 @@ const About = () => {
 
   return (
     <AnimatedSection>
-      <section id="about" className="section">
+      <section id="about" className="section relative overflow-hidden">
+        <FloatingAboutElements />
         <div className="container">
           <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 fade-in">
             <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">

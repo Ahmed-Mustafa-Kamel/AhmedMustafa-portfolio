@@ -1,5 +1,6 @@
 import SkillCard from "../SkillCard";
 import AnimatedSection from "../common/AnimatedSection";
+import FloatingIcons3D from "../common/FloatingIcons3D";
 
 /**
  * @copyright 2024 AhmedMustafa
@@ -67,8 +68,20 @@ const skillItem = [
 const Skill = () => {
   return (
     <AnimatedSection>
-      <section id="skills" className="section">
-        <div className="container">
+      <section id="skills" className="section relative overflow-hidden">
+        <FloatingIcons3D 
+          icons={[
+            "/react.svg",
+            "/javascript.svg",
+            "/html-5.svg",
+            "/css3.svg",
+            "/nodejs.svg",
+            "/tailwindcss.svg",
+            "/nextjs.svg",
+            "/git.svg"
+          ]}
+        />
+        <div className="container relative z-10">
           <h2 className="headline-3 fade-in">Essential Tools I Use</h2>
 
           <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] fade-in">
