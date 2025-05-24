@@ -81,7 +81,7 @@ const Hero = () => {
               <img
                 src="/hero.png"
                 width={240}
-                className="drop-shadow-[0_-1px_2px_#36befa] mx-auto"
+                className="drop-shadow-[0_-2px_3px_#36befa] mx-auto"
                 alt="Ahmed Mustafa"
               />
             </figure>

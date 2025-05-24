@@ -6,20 +6,8 @@ import PropTypes from "prop-types";
 
 const Layout = ({ children }) => {
   useEffect(() => {
-    // Create a new Lenis instance
-    const lenis = new Lenis({
-      duration: 1.2,  // Animation duration in seconds
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
-      direction: 'vertical', // Scroll direction
-      smooth: true,  // Enable smooth scrolling
-      smoothTouch: false, // Disable smooth scrolling on touch devices
-      touchMultiplier: 2, // Touch multiplier
-    });
-    
-    // Make lenis instance globally accessible
-    window.lenis = lenis;
+    const lenis = new Lenis();
 
-    // Set up the animation frame loop
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -27,9 +15,7 @@ const Layout = ({ children }) => {
 
     requestAnimationFrame(raf);
 
-    // Clean up when component unmounts
     return () => {
-      window.lenis = null;
       lenis.destroy();
     };
   }, []);
