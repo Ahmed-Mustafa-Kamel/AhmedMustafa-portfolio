@@ -77,14 +77,14 @@ const Hero = () => {
 
           {/* image  */}
           <div className="">
-            <figure className="w-full max-w-[300px] mx-auto md:ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] mt-10 overflow-hidden">
+            <div className="w-full max-w-[300px] mx-auto md:ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] mt-10 overflow-hidden animate-laserReveal ">
               <img
                 src="/hero.png"
                 width={240}
-                className="drop-shadow-[0_-1px_2px_#36befa] mx-auto"
+                className="drop-shadow-[0_-1px_2px_#36befa] mx-auto animate-fadeInBottom"
                 alt="Ahmed Mustafa"
               />
-            </figure>
+            </div>
           </div>
           {/*end image  */}
         </div>

@@ -162,7 +162,7 @@ textarea:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-/* Add this at the end of the file */
+/* Animations */
 @keyframes pulseLight {
   0% {
     opacity: 0.2;
@@ -178,6 +178,32 @@ textarea:-webkit-autofill:focus {
   }
 }
 
+@keyframes fadeInBottom {
+  0% {
+    display: none;
+    transform: translateY(90%);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes laserReveal {
+  0% {
+    clip-path: inset(100% 0 0 0);
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
 .animate-pulse-light {
   animation: pulseLight 8s ease-in-out infinite;
 }
@@ -186,3 +212,13 @@ textarea:-webkit-autofill:focus {
   animation: pulseLight 8s ease-in-out infinite;
   animation-delay: -4s;
 }
+
+.animate-fadeInBottom {
+  animation: fadeInBottom 1.5s ease-out forwards;
+}
+
+.animate-laserReveal {
+  animation: laserReveal 1.2s ease-out forwards;
+  will-change: clip-path, opacity;
+}
+
