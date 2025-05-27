@@ -3,7 +3,7 @@
  * @license Apache-2.0
  */
 import { TypeAnimation } from "react-type-animation";
-import CV from "../../assets/Ahmed Mustafa Kamel.pdf";
+import CV from "../../assets/Ahmed-Mustafa-Frontend-Resume.pdf";
 import AnimatedSection from "../common/AnimatedSection";
 import { ButtonPrimary, ButtonOutLine } from "@components/common/Button";
 import FloatingHomeElements from "../common/FloatingHomeElements";
@@ -81,7 +81,7 @@ const Hero = () => {
               <img
                 src="/hero.png"
                 width={240}
-                className="drop-shadow-[0_-2px_3px_#36befa] mx-auto"
+                className="drop-shadow-[0_-1px_2px_#36befa] mx-auto"
                 alt="Ahmed Mustafa"
               />
             </figure>
