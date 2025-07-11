@@ -15,7 +15,7 @@ export const NAV_ITEMS = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
-    { label: "Work", href: "#work" }
+    { label: "Projects", href: "#work" },
 ];
 
 export const SKILLS = [

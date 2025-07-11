@@ -5,7 +5,7 @@
 
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
-import { NAV_ITEMS } from '@constants/data';
+import { NAV_ITEMS } from "@constants/data";
 
 const Navbar = ({ navOpen }) => {
   const lastActiveLink = useRef();
@@ -43,7 +43,7 @@ const Navbar = ({ navOpen }) => {
         const offsetPosition = elementPosition + window.scrollY - headerOffset;
         window.scrollTo({
           top: offsetPosition,
-          behavior: "smooth"
+          behavior: "smooth",
         });
       }
     }
@@ -61,7 +61,7 @@ const Navbar = ({ navOpen }) => {
           lastActiveLink.current?.classList.remove("active");
           navLinks[index].classList.add("active");
           lastActiveLink.current = navLinks[index];
-          
+
           activBox.current.style.top = navLinks[index].offsetTop + "px";
           activBox.current.style.left = navLinks[index].offsetLeft + "px";
           activBox.current.style.width = navLinks[index].offsetWidth + "px";
@@ -89,7 +89,7 @@ const Navbar = ({ navOpen }) => {
           key={index}
           href={href}
           ref={index === 0 ? lastActiveLink : null}
-          className={`nav-link${index === 0 ? ' active' : ''}`}
+          className={`nav-link${index === 0 ? " active" : ""}`}
           onClick={(e) => {
             activeCurrentLink(e);
             handleClick(e, href);

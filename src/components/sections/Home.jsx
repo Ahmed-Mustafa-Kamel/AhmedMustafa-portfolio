@@ -2,7 +2,7 @@
  * @copyright 2024 AhmedMustafa
  * @license Apache-2.0
  */
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 import CV from "../../assets/Ahmed-Mustafa-Frontend-Resume.pdf";
 import AnimatedSection from "../common/AnimatedSection";
 import { ButtonPrimary, ButtonOutLine } from "@components/common/Button";
@@ -40,7 +40,11 @@ const Hero = () => {
             </div>
 
             <h1 className="headline-2 my-8">
-              {"Building"}
+              Hello,
+              <br /> I&apos;m Ahmed Mustafa
+            </h1>
+            <h2 className="headline-3 my-8">
+              {/* {"I Build"}
               <br />
               <TypeAnimation
                 sequence={["Scalable", 1500, "Modern", 1500]}
@@ -49,14 +53,11 @@ const Hero = () => {
                 className="text-sky-300 "
               />
               <br />
-              {"Websites"}
-            </h1>
+              {"Websites"} */}
+              I build fast, responsive React & Next.js apps
+            </h2>
             <div className="flex items-center gap-3">
-              <ButtonPrimary
-                label={"Download Resume"}
-                icon="download"
-                href={CV}
-              />
+              <ButtonPrimary label={"Download CV"} icon="download" href={CV} />
               <div className="hidden md:block">
                 <ButtonOutLine
                   href={"#contact"}
@@ -77,11 +78,11 @@ const Hero = () => {
 
           {/* image  */}
           <div className="">
-            <div className="w-full max-w-[300px] mx-auto md:ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] mt-10 overflow-hidden animate-laserReveal ">
+            <div className="w-full max-w-[300px] mx-auto md:ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] mt-10 overflow-hidden  ">
               <img
                 src="/hero.png"
                 width={240}
-                className="drop-shadow-[0_-1px_2px_#36befa] mx-auto animate-fadeInBottom"
+                className="drop-shadow-[0_-1px_2px_#36befa] mx-auto "
                 alt="Ahmed Mustafa"
               />
             </div>

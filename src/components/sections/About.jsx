@@ -36,12 +36,12 @@ const About = () => {
         <FloatingAboutElements />
         <div className="container">
           <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 fade-in">
-            <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-              Welcome! I&apos;m Ahmed, a professional web developer with a knack
-              for crafting visually stunning and highly functional websites.
-              Combining creativity and technical expertise. I transform your
-              vision into digital masterpiece that excels in both appearance and
-              performance.
+            <h2 className="headline-3 my-2">About</h2>
+            <p className="text-zinc-200 mb-4 md:mb-8 md:text-xl ">
+              I’m a Front-End Developer specializing in building fast,
+              responsive, and user-friendly web applications using React,
+              Next.js, and modern JavaScript technologies. Passionate about
+              continuous learning and creating clean, scalable code.
             </p>
             <div className="flex flex-wrap items-center gap-4 md:gap-7">
               <div>

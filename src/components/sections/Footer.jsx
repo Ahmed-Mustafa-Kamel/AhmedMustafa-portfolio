@@ -2,9 +2,10 @@
  * @copyright 2024 AhmedMustafa
  * @license Apache-2.0
  */
+const year = new Date().getFullYear();
 
-import { ButtonPrimary } from '@components/common/Button';
-import { SOCIAL_LINKS, NAV_ITEMS } from '@constants/data';
+import { ButtonPrimary } from "@components/common/Button";
+import { SOCIAL_LINKS, NAV_ITEMS } from "@constants/data";
 
 const Footer = () => {
   return (
@@ -66,11 +67,16 @@ const Footer = () => {
         {/* logo img & copyrights */}
         <div className=" flex items-center justify-between pt-10">
           <a href="/">
-            <img src="/AMlogo2.png" width={40} height={40} alt="Ahmed Mustafa Logo" />
+            <img
+              src="/AMlogo2.png"
+              width={40}
+              height={40}
+              alt="Ahmed Mustafa Logo"
+            />
           </a>
           {/* copy rights */}
           <p className=" text-zinc-500 text-sm">
-            &copy; 2024 <span className=" text-zinc-200">Ahmed Mustafa</span>
+            &copy; {year} <span className=" text-zinc-200">Ahmed Mustafa</span>
           </p>
         </div>
       </div>
