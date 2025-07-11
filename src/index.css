@@ -26,7 +26,7 @@ body {
 }
 
 .headline-2 {
-  @apply text-3xl leading-tight font-semibold text-[40px] md:text-[50px];
+  @apply text-3xl leading-tight font-semibold  md:text-[50px];
 }
 
 .headline-3 {
