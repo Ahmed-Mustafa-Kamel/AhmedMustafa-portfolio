@@ -39,10 +39,10 @@ const Hero = () => {
               {/* end available */}
             </div>
 
-            <h1 className="headline-2 my-8">
+            <h2 className="headline-2 my-8">
               Hello,
               <br /> I&apos;m Ahmed Mustafa
-            </h1>
+            </h2>
             <h2 className="headline-3 my-8">
               {/* {"I Build"}
               <br />
