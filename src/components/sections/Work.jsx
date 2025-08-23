@@ -72,7 +72,7 @@ const Work = () => {
       <section id="work" className="section relative overflow-hidden">
         <FloatingWorkElements />
         <div className="container">
-          <h2 className="headline-3 mb-4 fade-in">See My Projects</h2>
+          <h2 className="headline-3 mb-4 fade-in">My Portfolio Highlights</h2>
           {/* mapping projects */}
           <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
             {Works.map(({ imgSrc, title, tags, projectLink }, index) => (
