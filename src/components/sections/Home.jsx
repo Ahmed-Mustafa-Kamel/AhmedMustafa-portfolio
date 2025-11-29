@@ -3,7 +3,7 @@
  * @license Apache-2.0
  */
 // import { TypeAnimation } from "react-type-animation";
-import CV from "../../assets/Ahmed-Mustafa-Frontend-CV.pdf";
+import CV from "../../assets/Ahmed-Mustafa-Resume.pdf";
 import AnimatedSection from "../common/AnimatedSection";
 import { ButtonPrimary, ButtonOutLine } from "@components/common/Button";
 import FloatingHomeElements from "../common/FloatingHomeElements";
