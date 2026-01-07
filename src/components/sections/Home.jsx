@@ -3,7 +3,6 @@
  * @license Apache-2.0
  */
 // import { TypeAnimation } from "react-type-animation";
-import CV from "../../assets/Ahmed-Mustafa-Resume.pdf";
 import AnimatedSection from "../common/AnimatedSection";
 import { ButtonPrimary, ButtonOutLine } from "@components/common/Button";
 
@@ -37,10 +36,10 @@ const Hero = () => {
               {/* end available */}
             </div>
 
-            <h2 className="headline-2 my-8">
+            <h1 className="headline-2 my-8">
               Hello,
               <br /> I&apos;m Ahmed Mustafa
-            </h2>
+            </h1>
             <h2 className="headline-3 my-8">
               {/* {"I Build"}
               <br />
@@ -52,10 +51,10 @@ const Hero = () => {
               />
               <br />
               {"Websites"} */}
-              I build fast, responsive React & Next.js apps
+              I build fast, responsive React &amp; Next.js apps
             </h2>
             <div className="flex items-center gap-3">
-              <ButtonPrimary label={"Download CV"} icon="download" href={CV} />
+              <ButtonPrimary label={"Download CV"} icon="download" href="/Ahmed-Mustafa-Resume.pdf" />
               <div className="hidden md:block">
                 <ButtonOutLine
                   href={"#contact"}

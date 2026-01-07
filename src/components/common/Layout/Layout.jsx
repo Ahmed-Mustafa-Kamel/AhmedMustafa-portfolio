@@ -8,6 +8,9 @@ const Layout = ({ children }) => {
   useEffect(() => {
     const lenis = new Lenis();
 
+    // Make lenis available globally for navbar smooth scrolling
+    window.lenis = lenis;
+
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -17,6 +20,7 @@ const Layout = ({ children }) => {
 
     return () => {
       lenis.destroy();
+      window.lenis = null;
     };
   }, []);
 
