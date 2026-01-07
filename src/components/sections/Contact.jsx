@@ -5,7 +5,6 @@
 
 import { ButtonPrimary } from "@components/common/Button";
 import AnimatedSection from "../common/AnimatedSection";
-import FloatingContactElements from "../common/FloatingContactElements";
 
 const socialLinks = [
   {
@@ -50,7 +49,6 @@ const Contact = () => {
   return (
     <AnimatedSection>
       <section id="contact" className="section relative overflow-hidden">
-        <FloatingContactElements />
         <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
           {/* left section */}
           <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
@@ -96,7 +94,7 @@ const Contact = () => {
               <input
                 type="hidden"
                 name="access_key"
-                value="c254446e-9412-4d58-b0ca-2bc4a7bfb79f"
+                value="6a1b794f-aeca-4dce-a8ff-b42d494021f9"
               />
 
               <div className="md:grid md:grid-cols-2 md:gap-4">

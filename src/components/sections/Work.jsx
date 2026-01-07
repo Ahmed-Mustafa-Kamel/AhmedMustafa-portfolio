@@ -5,7 +5,6 @@
 
 import ProjectCard from "./ProjectCard";
 import AnimatedSection from "../common/AnimatedSection";
-import FloatingWorkElements from "../common/FloatingWorkElements";
 
 const Works = [
   {
@@ -70,7 +69,6 @@ const Work = () => {
   return (
     <AnimatedSection>
       <section id="work" className="section relative overflow-hidden">
-        <FloatingWorkElements />
         <div className="container">
           <h2 className="headline-3 mb-4 fade-in">My Portfolio Highlights</h2>
           {/* mapping projects */}
