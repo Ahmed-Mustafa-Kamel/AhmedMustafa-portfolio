@@ -32,12 +32,13 @@ export const metadata = {
         apple: '/AMlogo2.png',
     },
     manifest: '/manifest.json',
+};
+
+export const viewport = {
     themeColor: '#0ea5e9',
-    viewport: {
-        width: 'device-width',
-        initialScale: 1,
-        maximumScale: 5,
-    },
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
 };
 
 export default function RootLayout({ children }) {
