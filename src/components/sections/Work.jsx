@@ -8,6 +8,12 @@ import AnimatedSection from "../common/AnimatedSection";
 
 const Works = [
   {
+    imgSrc: "/projects/Hotel-Reservation.png",
+    title: "Hotel Reservation Website",
+    tags: ["FrontEnd", "React.js", "Redux", "Tailwind"],
+    projectLink: "https://hotel-reservation-task.vercel.app/",
+  },
+  {
     imgSrc: "/projects/DevSquad-portfolio.png",
     title: "Dev Squad Portfolio",
     tags: ["FrontEnd", "React.js", "Tailwind", "Framer Motion"],
