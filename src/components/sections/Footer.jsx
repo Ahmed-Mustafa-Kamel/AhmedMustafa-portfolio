@@ -19,7 +19,7 @@ const Footer = () => {
               Let&apos;s work together!
             </h2>
             <ButtonPrimary
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmed.kamel.dev@gmail.com"
+              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=ahmed.kamel.dev@gmail.com&su=Project%20Inquiry&body=Hi%20Ahmed%2C%0A%0AI%20would%20like%20to%20discuss%20a%20potential%20project.%0A%0A---%20My%20Details%20---%0AName%3A%20%5BYour%20Name%5D%0AEmail%3A%20%5BYour%20Email%5D%0APhone%2FWhatsApp%3A%20%5BYour%20Phone%20Number%5D%0A%0A---%20Message%20---%0A%5BYour%20Message%20Here%5D%0A%0AThanks!"
               target="_blank"
               label={"Start Project"}
               icon="chevron_right"
