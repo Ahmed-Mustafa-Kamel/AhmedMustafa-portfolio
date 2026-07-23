@@ -54,7 +54,7 @@ const Hero = () => {
               I build fast, responsive React &amp; Next.js apps
             </h2>
             <div className="flex items-center gap-3">
-              <ButtonPrimary label={"Download CV"} icon="download" href="/Ahmed-Mustafa-Resume.pdf" />
+              <ButtonPrimary label={"Download CV"} icon="download" href="/Ahmed-Mustafa-CV.pdf" />
               <div className="hidden md:block">
                 <ButtonOutLine
                   href={"#contact"}
